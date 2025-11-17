@@ -3,15 +3,12 @@
 #include <string.h>
 #include <unistd.h>
 #include <pthread.h>
-
 void *mensaje(void *arg)
 {
     char *msg;
     msg = (char *)arg;
-    printf("%s", msg);
-    
+    printf("%s", msg);   
 }
-
 int main()
 {
     pthread_t h1, h2, h3, h4;
